@@ -1,0 +1,55 @@
+/* CSS DOCUMENT */
+
+@charset "utf-8";
+
+@font-face {
+    font-family: "Sabon Regular";
+    src: url(fuentes/Sabon.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: "Sabon Bold";
+    src: url(fuentes/SabonBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;}
+
+@font-face {
+    font-family: "Sabon Italic";
+    src: url(fuentes/SabonItalic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;}
+
+@font-face {
+    font-family: "Sabon Bold Italic";
+    src: url(fuentes/SabonBoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;}
+
+*{
+    text-align: center;
+    background-color: rgb(226, 239, 250);
+    list-style: none;
+    }
+
+header{
+    text-align: left;}
+
+h1 {
+    font-family: "Sabon Bold";
+    font-size: 35px;
+    background-color: skyblue;}
+
+li {
+   font-family: "Sabon Regular";}
+
+h2 {
+    font-family: "Sabon Bold";
+    background-color: skyblue;}
+
+p{
+    font-family: "Sabon Italic";
+    color:rgb(117, 116, 116);}
+
+h3 {
+    font-family: "Sabon Bold";}
