@@ -97,7 +97,9 @@ h3{
         width: 700px;}}
 
 #contacto{
-    text-align: center;}
+    text-align: center;
+    display: flex;
+    align-items: center}
 
 footer{
     text-align: center;}
