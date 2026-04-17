@@ -3,53 +3,103 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: "Sabon Regular";
-    src: url(fuentes/Sabon.ttf) format(truetype);
+    font-family: "Cabinet Grotesk Regular";
+    src: url(fuentes/CabinetGrotesk-Regular.otf) format(truetype);
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
-    font-family: "Sabon Bold";
-    src: url(fuentes/SabonBold.ttf) format(truetype);
+    font-family: "Cabinet Grotesk Bold";
+    src: url(fuentes/CabinetGrotesk-Bold.otf) format(truetype);
     font-weight: bold;
     font-style: normal;}
 
 @font-face {
-    font-family: "Sabon Italic";
-    src: url(fuentes/SabonItalic.ttf) format(truetype);
-    font-weight: normal;
-    font-style: italic;}
+    font-family: "Cabinet Grotesk Light";
+    src: url(fuentes/CabinetGrotesk-Light.otf) format(truetype);
+    font-weight: lighter;
+    font-style: normal;}
 
-@font-face {
-    font-family: "Sabon Bold Italic";
-    src: url(fuentes/SabonBoldItalic.ttf) format(truetype);
-    font-weight: bold;
-    font-style: italic;}
+
 
 *{
-    text-align: center;
-    background-color: rgb(226, 239, 250);
+    font-family: "Cabinet Grotesk Regular";
+    background-color: rgb(209, 194, 220);
     list-style: none;
-    }
+    margin: 7px;
+    padding: 0px;
+    box-sizing: border-box;}
 
 header{
-    text-align: left;}
+    display: flex;
+    padding: 20px;
+    background-color: rgb(255,235,60);}
+
+nav{
+    display: flex;
+    gap: 25px;}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+
+section{
+    width: 100%;}
+
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;}
+
+.contenedor{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;}
+
+.columnas{
+    display: flex;
+} 
 
 h1 {
-    font-family: "Sabon Bold";
-    font-size: 35px;
-    background-color: skyblue;}
+    font-family: "Cabinet Grotesk Bold";
+    font-size: 50px;
+    color: rgb(97,54,134);}
 
 li {
-   font-family: "Sabon Regular";}
+   font-family: "Cabinet Grotesk Regular";}
 
 h2 {
-    font-family: "Sabon Bold";
-    background-color: skyblue;}
+    font-family: "Cabinet Grotesk Bold";
+    font-size: 30px;
+    color: rgb(97,54,134);}
 
 p{
-    font-family: "Sabon Italic";
+    font-family: "Cabinet Grotesk Light";
+    font-size: 15px;
     color:rgb(117, 116, 116);}
 
-h3 {
-    font-family: "Sabon Bold";}
+h3{
+    font-family: "Cabinet Grotesk Bold";
+    font-size: 20px;}
+
+#presentacion{
+    article{
+            
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;            
+        gap: 25px;
+        width: 700px;}}
+
+#contacto{
+    text-align: center;}
+
+footer{
+    text-align: center;}
+
+
