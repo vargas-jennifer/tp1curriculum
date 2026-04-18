@@ -24,14 +24,14 @@
 
 *{
     font-family: "Cabinet Grotesk Regular";
-    background-color: rgb(209, 194, 220);
+    background-color: rgb(209, 194, 220); /* no es una buena práctica poner en el selector universal el color de fondo porque va a aplicar a cada uno de los elementos de forma individual, si lo que querés es que todo el fondo sea de este color aplicalo en body */
     list-style: none;
-    margin: 7px;
+    margin: 7px; /* tampoco es una buena práctica poner en el selector universal un margin porque afecta a todos los elementos, esto es el principal problema de por qué el header no llega a los extremos*/
     padding: 0px;
     box-sizing: border-box;}
 
 header{
-    display: flex;
+    display: flex; /* esta propiedad no está generando cambios */
     padding: 20px;
     background-color: rgb(255,235,60);}
 
@@ -54,7 +54,7 @@ article{
 
 .contenedor{
     display: flex;
-    align-content: center;
+    align-content: center; /* esta propiedad no funciona porque necesita de flex-wrap */
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;}
@@ -77,7 +77,7 @@ h2 {
     color: rgb(97,54,134);}
 
 p{
-    font-family: "Cabinet Grotesk Light";
+    font-family: "Cabinet Grotesk Light"; /* esta tipogradía es muy liviana y en tamaños pequeños no tiene una buena lectura, una persona con visión reducida podría tener problemas */
     font-size: 15px;
     color:rgb(117, 116, 116);}
 
@@ -86,15 +86,15 @@ h3{
     font-size: 20px;}
 
 #presentacion{
-    article{
+    article{ /* guarda que en la línea 50 ya estás estableciendo propiedades repetidas de article, cuando aparece un selector repetido tiene que ser para cambiar cosas específicas de este, pero no repetir */
             
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: center; /* esta propiedad no produce cambios */
         padding: 30px;            
         gap: 25px;
-        width: 700px;}}
+        width: 700px;/* guarda con los anchos fijos, estos te van a complicar en otros trabajos prácticos, mejor usar max-width */ }}
 
 #contacto{
     text-align: center;
