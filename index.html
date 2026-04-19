@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="utfl-8" />
+         <meta charset="utfl-8" />  <!-- guarda que no está bien escrito -->
          <title>Mi primer TP</title>
-         <link href=estilos.css rel="stylesheet" type="text/css">
+         <link href=estilos.css rel="stylesheet" type="text/css"> 
+         <!-- acá falta un link -->
     </head>
     
-    <body>
+    <body> <!--  -->
         <header>
             <div class="contenedor">
                 <img src="imagenes/loguito.png" alt="" width="50" height="33">
@@ -30,13 +31,13 @@
                 Me considero una persona detallista y un poco estructurada. Me gusta el diseño editorial y las tipografías.</p>
                 </article>
 
-                <img src="imagenes/trama.png" alt="" width="" height="">
+                <img src="imagenes/trama.png" alt="" width="" height=""> <!-- no te olvides de ponerle alto y ancho, además, te conviene que esto esté como background-image desde css en un div vacío con una altura fija y utilizar la propiedad repeat -->
             </section>
 
             <section>
                 <div class="columnas">
                 
-                <section>
+                <section> <!-- no es semánticamente correcto que una section contenga otra section, esto podría ser un article, o muchísimo mejor podría ser una lista porque veo que en ninguna parte de tu trabajo práctico utilizaste este tipo de etiqueta y te va a ser muy útil practicarlas. lo mismo podría aplicarse a experiencia laboral -->
                     <h2>Educación</h2>
 
                     <h3>Licenciatura en Diseño y Comunicación Visual</h3>
@@ -67,9 +68,9 @@
             
             <section>
                 <h2>Contacto</h2>
-                <section id="contacto">
-                    <img src="imagenes/correo.png" alt="" width="40" height="30">
-                    <a href="">98jennifer.vargas@gmail.com</a>
+                <section id="contacto"> <!-- además de no ser correcto que una section contenga otra section, es semánticamente incorrecto que dos elementos tan pequeños constituyan un elemento que significa ser algo más grande, podría ser un width tranquilamente -->
+                    <img src="imagenes/correo.png" alt="" width="40" height="30"> <!-- no te olvides del alt! -->
+                    <a href="">98jennifer.vargas@gmail.com</a> <!-- no dejes vacío el href, repasá el video de etiquetas a -->
                 </section>
             </section>
            
