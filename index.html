@@ -1,77 +1,174 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="utfl-8" />  <!-- guarda que no está bien escrito -->
+         <meta charset="utf-8" />  
          <title>Mi primer TP</title>
          <link href=estilos.css rel="stylesheet" type="text/css"> 
-         <!-- acá falta un link -->
+         <link rel="icon" type=image/x-icon href="favicon.ico">
     </head>
     
-    <body> <!--  -->
+    <body> 
         <header>
+
             <div class="contenedor">
-                <img src="imagenes/loguito.png" alt="" width="50" height="33">
+                <img src="imagenes/loguito.png" alt="ícono" width="50" height="33">
                 <nav>
                         <a href="#presetacion">Sobre mí</a>
-                        <a href="#educacion-experiencia">Educación/Experiencia</a>
+                        <a href="#educacion-experiencia">Educación</a>
+                        <a href="#habilidades-cursos">Habilidades</a>
+                        <a href="#portfolio">Portfolio</a>
                         <a href="#contacto">Contacto</a>
                 </nav>
             </div>
+            <h1>Jennifer Vanina Vargas</h1>
         </header>
 
         <main>
-            <h1>Jennifer Vanina Vargas</h1>
 
            <section id="presentacion">
                 <h2>Sobre mí</h2>
                 
                 <article>
-                <img src="imagenes/foto-cv.jpg" alt="" width="250" height="188"> 
-                <p>Hola, mi nombre es Jennifer, tengo 27 años y vivo en Rafael Castillo. Soy estudiante de Diseño y Comunicación Visual cursando el último tramo de la carrera en UNLa. 
-                Me considero una persona detallista y un poco estructurada. Me gusta el diseño editorial y las tipografías.</p>
+                <img src="imagenes/foto-cv.jpg" alt="foto mía" width="250" height="188"> 
+                <p>¡Hola! mi nombre es Jennifer, tengo 27 años y vivo en Rafael Castillo. Soy estudiante de Diseño y Comunicación Visual en UNLa, actualmente cursando el último tramo de la carrera. Me considero como una persona detallista y organizada, con inclinación hacia el diseño editorial y la tipografía. Me encuentro en la búsqueda de mi primera experiencia laboral en el sector, con muchas ganas de volcar mis conocimientos académicos.</p>
                 </article>
-
-                <img src="imagenes/trama.png" alt="" width="" height=""> <!-- no te olvides de ponerle alto y ancho, además, te conviene que esto esté como background-image desde css en un div vacío con una altura fija y utilizar la propiedad repeat -->
+                <div class="trama"></div>
             </section>
 
-            <section>
+            <section id="educacion-experiencia">
                 <div class="columnas">
                 
-                <section> <!-- no es semánticamente correcto que una section contenga otra section, esto podría ser un article, o muchísimo mejor podría ser una lista porque veo que en ninguna parte de tu trabajo práctico utilizaste este tipo de etiqueta y te va a ser muy útil practicarlas. lo mismo podría aplicarse a experiencia laboral -->
-                    <h2>Educación</h2>
+                    <article class="educacion">
+                        <h2>Educación</h2>
+                        <ul>
+                            <li>
+                                <h3>Licenciatura en Diseño y Comunicación Visual</h3>
+                                <p>Universidad Nacional de Lanús, 2022 - actualidad</p>
+                            </li>
 
-                    <h3>Licenciatura en Diseño y Comunicación Visual</h3>
-                    <p>Universidad Nacional de Lanús, 2022 - actualidad</p>
-                    <h3>Curso de Marketing Digital, Escuela ETER (2025, completo)</h3>
-                    <p>Aprendí a armar estrategias desde la creación de contenidos hasta lo más técnico.</p>
+                            <li>
+                                <h3>Ingeniería en Informática</h3>
+                                <p>Universidad Nacional de la Matanza, 2017 - 2020 (materias iniciales)</p>
+                            </li>
 
-                    <h3>Ingeniería en Informática</h3>
-                    <p>Universidad Nacional de la Matanza, 2017 - 2020 (materias iniciales)</p>
-                </section>
+                            <li>
+                                <h3>Bachiller en Administración y Economía</h3>
+                                <p>Escuela Secundaria Fragata Libertad, 2010 - 2015</p>
+                            </li>
+                        </ul>
+                    </article>
 
-                <section>
-                    <h2>Experiencia Laboral</h2>
+                    <article class="experiencia">
+                        <h2>Experiencia Laboral</h2>
 
-                    <h3>Camarera</h3>
-                    <p>Cafetería Bloom | Eventual 2025</p>
+                        <ul>
+                            <li>
+                                <h3>Camarera</h3>
+                                <p>Cafetería Bloom | Eventual 2025</p>
+                            </li>
 
-                    <h3>Atención al cliente</h3>
-                    <p> Joyería Tifany's | 2022-2025</p>
+                            <li>
+                                <h3>Atención al cliente</h3>
+                                <p> Joyería Tifany's | 2022-2025</p>
+                            </li>
 
-                    <h3>Atención al cliente</h3>
-                    <p>Emprendimiento familiar | 2020-2022</p>
-                </section>
+                            <li>
+                                <h3>Atención al cliente</h3>
+                                <p>Emprendimiento familiar | 2020-2022</p>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
 
-                <img src="imagenes/trama.png" alt="" width="" height="">
+                <div class="trama"></div>
             </section>
+
+            <section id="habilidades-cursos">
+
+                <div class="columnas2">
+                    
+                    <article class="habilidades"> 
+                        <h2>Habilidades</h2>
+                        <div class="contenido">       
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Indesign</li>
+                                <li>Figma</li>
+                            </ul>
+                            <img src="imagenes/florcitas.png" alt="nivelación de habilidades" width="150">
+                        </div>
+                    </article>
+                
+                    <article class="cursos">
+                        <h2>Cursos e idiomas</h2>
+                        <ul>
+                            <li>
+                                <h3>Curso de Marketing Digital - Escuela ETER (2025, completo)</h3>
+                                <p>Aprendí a armar estrategias desde la creación de contenidos hasta lo más técnico.</p>
+                            </li>
+
+                            <li>
+                                <h3>Francés - UNLaM (2018)</h3>
+                                <p>Estudié un año francés, aprendí lo básico del idioma.</p>
+                            </li>
+
+                            <li>                            
+                                <h3>Inglés - School of English (2015, completo)</h3>
+                                <p>Estudié inglés en paralelo al primario y secundario.</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="trama"></div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+
+                <article class="materias">
+
+                    <h3>Trabajo tipográfico</h3>
+                    <div class="fotos a">
+                        <img src="imagenes/b1.jpg">
+                        <img src="imagenes/b2.jpg">
+                        <img src="imagenes/b3.jpg">
+                        <img src="imagenes/b4.jpg">
+                        <img src="imagenes/b5.jpg">
+                        <img src="imagenes/b6.jpg">
+                    </div>
+                </article>
+
+                <article class="materias">
+                    
+                    <h3>Fotografía (Optativa)</h3>
+                    <div class="fotos b">
+                        <img src="imagenes/foto.jpg">
+                        <img src="imagenes/foto1.jpg">
+                        <img src="imagenes/foto2.jpg">
+                        <img src="imagenes/foto3.jpg">
+                    </div>
+                </article>
+                
+                <div class="trama"></div> 
+            </section>
+
             
-            <section>
+            <section id="contacto">
                 <h2>Contacto</h2>
-                <section id="contacto"> <!-- además de no ser correcto que una section contenga otra section, es semánticamente incorrecto que dos elementos tan pequeños constituyan un elemento que significa ser algo más grande, podría ser un width tranquilamente -->
-                    <img src="imagenes/correo.png" alt="" width="40" height="30"> <!-- no te olvides del alt! -->
-                    <a href="">98jennifer.vargas@gmail.com</a> <!-- no dejes vacío el href, repasá el video de etiquetas a -->
-                </section>
+                    
+                <div class="redes">
+                    <div class="correo">
+                        <img src="imagenes/correo.png" alt="ícono de gmail" width="40" height="30">
+                        <a href="#"">Gmail</a>
+                    </div>
+
+                    <div class="instagram">
+                        <img src="imagenes/instagram.png" alt="ícono de instagram" width="40" height="40">
+                        <a href="#">Instagram</a>      
+                    </div>
+                </div>
             </section>
            
         </main> 
@@ -82,3 +179,4 @@
     </body>
 
 </html>
+

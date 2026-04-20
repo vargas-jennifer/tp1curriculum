@@ -20,24 +20,22 @@
     font-weight: lighter;
     font-style: normal;}
 
-
-
 *{
     font-family: "Cabinet Grotesk Regular";
-    background-color: rgb(209, 194, 220); /* no es una buena práctica poner en el selector universal el color de fondo porque va a aplicar a cada uno de los elementos de forma individual, si lo que querés es que todo el fondo sea de este color aplicalo en body */
     list-style: none;
-    margin: 7px; /* tampoco es una buena práctica poner en el selector universal un margin porque afecta a todos los elementos, esto es el principal problema de por qué el header no llega a los extremos*/
     padding: 0px;
     box-sizing: border-box;}
 
-header{
-    display: flex; /* esta propiedad no está generando cambios */
-    padding: 20px;
-    background-color: rgb(255,235,60);}
+body{
+    background-color: rgb(209, 194, 220);}
 
-nav{
-    display: flex;
-    gap: 25px;}
+header{
+    background-image: url(imagenes/fondo-header.png);
+    background-size: 100% 100%;
+    height: 250px;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 60px;}
 
 main{
     display: flex;
@@ -47,61 +45,123 @@ main{
 section{
     width: 100%;}
 
-article{
+nav{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;}
-
-.contenedor{
-    display: flex;
-    align-content: center; /* esta propiedad no funciona porque necesita de flex-wrap */
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;}
-
-.columnas{
-    display: flex;
-} 
+    gap: 25px;}
 
 h1 {
     font-family: "Cabinet Grotesk Bold";
     font-size: 50px;
-    color: rgb(97,54,134);}
+    color: rgb(97,54,134);
+    text-align: center;}
 
-li {
-   font-family: "Cabinet Grotesk Regular";}
+h3 {
+    font-family: "Cabinet Grotesk Bold";
+    font-size: 20px;}
+
+ul{
+    padding: 0px;}
+
+li{
+    font-family: "Cabinet Grotesk Bold";
+    font-size: 20px;
+    padding-left: 20px;}
+
+#presentacion{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    max-width: 1200px;}
+
+#educacion-experiencia, #habilidades-cursos, #portfolio, #contacto{
+    max-width: 1200px;}
+
+#presentacion article{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 25px 46px 20px;
+        gap: 25px;
+        max-width: 798px;
+        flex-wrap: nowrap;
+        align-items: center;}
+
+#contacto li{
+    font-size: 15px;}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;}
+
+.columnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 152px;
+    padding-bottom: 30px;}
+
+.columnas2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    gap: 310px;}
+
+.contenido{
+    display: flex;
+    gap: 50px;}
+
+.contenido li{
+    line-height: 50px;}
+
+.materias h3 { 
+    padding-left: 20px;}
+
+.a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 67px}
+    
+.b{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;}
+
+.orden{
+    display: flex;}
+
+.redes{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;}
+
+.correo, .instagram{
+    display: flex;
+    align-items: center;
+    gap: 20px;}
+
+.trama{
+    Background-image: url('imagenes/separador.png');
+    Background-repeat: repeat;
+    Width: 100%;
+    height: 40px;}
+
+p{
+    font-size: 16px;
+    color:rgb(117, 116, 116);
+    text-align: left;
+    line-height: 25px;}
 
 h2 {
     font-family: "Cabinet Grotesk Bold";
     font-size: 30px;
-    color: rgb(97,54,134);}
+    align-self: flex-start;
+    color: rgb(97,54,134);
+    padding-left: 20px;
+    padding-top: 50px;
+    margin: 30px 0px 20px 0px;} 
 
-p{
-    font-family: "Cabinet Grotesk Light"; /* esta tipogradía es muy liviana y en tamaños pequeños no tiene una buena lectura, una persona con visión reducida podría tener problemas */
-    font-size: 15px;
-    color:rgb(117, 116, 116);}
-
-h3{
-    font-family: "Cabinet Grotesk Bold";
-    font-size: 20px;}
-
-#presentacion{
-    article{ /* guarda que en la línea 50 ya estás estableciendo propiedades repetidas de article, cuando aparece un selector repetido tiene que ser para cambiar cosas específicas de este, pero no repetir */
-            
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; /* esta propiedad no produce cambios */
-        padding: 30px;            
-        gap: 25px;
-        width: 700px;/* guarda con los anchos fijos, estos te van a complicar en otros trabajos prácticos, mejor usar max-width */ }}
-
-#contacto{
-    text-align: center;
-    display: flex;
-    align-items: center}
-
-footer{
+footer p{
     text-align: center;}
-
-
