@@ -32,7 +32,7 @@ body{
 header{
     background-image: url(imagenes/fondo-header.png);
     background-size: 100% 100%;
-    height: 250px;
+    min-height: 250px;
     padding: 40px;
     padding-left: 50px;
     padding-right: 60px;}
@@ -74,7 +74,7 @@ li{
     text-align: center;
     max-width: 1200px;}
 
-#educacion-experiencia, #habilidades-cursos, #portfolio, #contacto{
+section{
     max-width: 1200px;}
 
 #presentacion article{
@@ -83,8 +83,7 @@ li{
         padding: 5px 25px 46px 20px;
         gap: 25px;
         max-width: 798px;
-        flex-wrap: nowrap;
-        align-items: center;}
+        flex-wrap: nowrap;}
 
 #contacto li{
     font-size: 15px;}
@@ -96,38 +95,44 @@ li{
 .columnas{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 152px;
+    flex-wrap: wrap;
+    column-gap: 152px;
     padding-bottom: 30px;}
 
 .columnas2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     padding-bottom: 30px;
-    gap: 310px;}
+    column-gap: 212px;}
 
 .contenido{
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 50px;}
 
 .contenido li{
     line-height: 50px;}
 
-.materias h3 { 
-    padding-left: 20px;}
+.materias { 
+    padding-left: 20px;
+    margin: 12px 0px 17px 0px;}
 
 .a{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 67px}
+    justify-content: space-evenly;
+    gap: 36px}
     
 .b{
     display: flex;
     justify-content: space-between;
-    padding: 20px;}
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;}
 
 .orden{
     display: flex;}
@@ -152,7 +157,11 @@ p{
     font-size: 16px;
     color:rgb(117, 116, 116);
     text-align: left;
-    line-height: 25px;}
+    line-height: 25px;
+    margin-top: 0px;}
+
+.materias p{
+    max-width: 485px;}
 
 h2 {
     font-family: "Cabinet Grotesk Bold";
