@@ -28,6 +28,7 @@
 
 :root{
     --violeta:rgb(57, 35, 71);
+    --violeta2:rgb(109, 88, 129);
     --lila:rgb(208, 196, 216);
     --amarillo:rgb(255, 250, 205);}
 
@@ -65,6 +66,9 @@ nav a{
     color: var(--amarillo);
     text-decoration: none;}
 
+a:hover{
+    color:var(--violeta2);
+}
 h1 {
     font-family: "sansita regular";
     font-size: 90px;
