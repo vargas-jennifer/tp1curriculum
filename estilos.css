@@ -3,90 +3,96 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: "Cabinet Grotesk Regular";
-    src: url(fuentes/CabinetGrotesk-Regular.otf) format(truetype);
+    font-family: "sansita regular";
+    src: url(fuentes/Sansita-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
-    font-family: "Cabinet Grotesk Bold";
-    src: url(fuentes/CabinetGrotesk-Bold.otf) format(truetype);
+    font-family: "sansita bold";
+    src: url(fuentes/Sansita-Bold.ttf) format(truetype);
     font-weight: bold;
     font-style: normal;}
 
 @font-face {
-    font-family: "Cabinet Grotesk Light";
-    src: url(fuentes/CabinetGrotesk-Light.otf) format(truetype);
-    font-weight: lighter;
+    font-family: "sansita italic";
+    src: url(fuentes/Sansita-Italic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;}
+
+@font-face {
+    font-family: "piazzolla regular";
+    src: url(fuentes/Piazzolla-Regular.ttf) format(truetype);
+    font-weight: normal;
     font-style: normal;}
 
+:root{
+    --violeta:rgb(57, 35, 71);
+    --lila:rgb(208, 196, 216);
+    --amarillo:rgb(255, 250, 205);}
+
 *{
-    font-family: "Cabinet Grotesk Regular";
+    font-family: "sansita regular";
     list-style: none;
     padding: 0px;
     box-sizing: border-box;}
 
 body{
-    background-color: rgb(209, 194, 220);}
+    background-color: var(--lila);}
 
 header{
-    background-image: url(imagenes/fondo-header.png);
-    background-size: 100% 100%;
-    min-height: 250px;
-    padding: 40px;
+    background-color: var(--violeta);
+    padding: 10px;
     padding-left: 50px;
     padding-right: 60px;}
 
 main{
     display: flex;
     align-items: center;
-    flex-direction: column;}
+    flex-direction: column;
+    padding: 337px;
+    padding-top: 150px;}
 
 section{
     width: 100%;}
 
 nav{
     display: flex;
-    gap: 25px;}
+    gap: 25px;
+    font-family: "sansita regular";}
+
+nav a{
+    color: var(--amarillo);
+    text-decoration: none;}
 
 h1 {
-    font-family: "Cabinet Grotesk Bold";
-    font-size: 50px;
-    color: rgb(97,54,134);
-    text-align: center;}
+    font-family: "sansita regular";
+    font-size: 90px;
+    color: var(--violeta);}
 
 h3 {
-    font-family: "Cabinet Grotesk Bold";
+    font-family: "sansita bold";
     font-size: 20px;}
 
 ul{
     padding: 0px;}
 
 li{
-    font-family: "Cabinet Grotesk Bold";
-    font-size: 20px;
-    padding-left: 20px;}
+    font-family: "sansita bold";
+    font-size: 20px;}
 
-#presentacion{
+.datos{    
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;
-    max-width: 1200px;}
+    flex-direction: column;}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;}
 
 section{
     max-width: 1200px;}
-
-#presentacion article{
-        display: flex;
-        flex-direction: row;
-        padding: 5px 25px 46px 20px;
-        gap: 25px;
-        max-width: 798px;
-        flex-wrap: nowrap;}
-
-#contacto li{
-    font-size: 15px;}
 
 .contenedor{
     display: flex;
@@ -100,77 +106,82 @@ section{
     column-gap: 152px;
     padding-bottom: 30px;}
 
-.columnas2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-bottom: 30px;
-    column-gap: 212px;}
-
 .contenido{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     gap: 50px;}
 
-.contenido li{
-    line-height: 50px;}
-
-.materias { 
-    padding-left: 20px;
-    margin: 12px 0px 17px 0px;}
-
-.a{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 36px}
-    
-.b{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 10px;}
-
-.orden{
-    display: flex;}
-
-.redes{
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;}
-
-.correo, .instagram{
-    display: flex;
-    align-items: center;
-    gap: 20px;}
-
-.trama{
-    Background-image: url('imagenes/separador.png');
-    Background-repeat: repeat;
-    Width: 100%;
-    height: 40px;}
-
 p{
+    font-family: "piazzolla regular";
     font-size: 16px;
-    color:rgb(117, 116, 116);
     text-align: left;
     line-height: 25px;
-    margin-top: 0px;}
-
-.materias p{
-    max-width: 485px;}
+    margin-top: 0px;
+    max-width: 625px;}
 
 h2 {
-    font-family: "Cabinet Grotesk Bold";
+    font-family: "sansita bold";
     font-size: 30px;
     align-self: flex-start;
-    color: rgb(97,54,134);
-    padding-left: 20px;
+    color: var(--violeta);
     padding-top: 50px;
     margin: 30px 0px 20px 0px;} 
 
-footer p{
-    text-align: center;}
+.fotos{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;}
+
+form div{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;}
+
+label{
+    display: block;
+    height: 25px;
+    padding: 0px 0 30px;}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-color:var(--violeta);
+    background-color:var(--lila);
+    margin-bottom: 5px;}
+
+input[type=checkbox]{
+    width: auto;
+    height: auto;}
+
+textarea{
+    width: 50%;
+    height: 130px;
+    background-color:var(--lila);
+    border-color: var(--violeta);
+    margin-bottom: 5px;}
+
+input[type=submit], input[type=reset]{
+    font-family: "sansita regular";
+    background-color: var(--amarillo);
+    height: 25px;
+    width: 8%;}
+
+footer{
+    background-color: var(--violeta);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 60px;}
