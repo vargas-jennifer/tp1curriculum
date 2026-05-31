@@ -44,14 +44,14 @@ body{
 header{
     background-color: var(--violeta);
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 50px; /* normalizá los paddings en una sola línea */
     padding-right: 60px;}
 
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 337px;
+    padding: 337px; /* paddings muy grandes!!! esto no va a solucionar problemas futuros en pantallas más grandes, por lo que te recomiendo que directamente al body le apliques un min-height de 100vh y después distribuir los elementos con propiedades de flex, así no te queda condicionado a tu pantalla o el de otra persona */
     padding-top: 150px;}
 
 section{
@@ -60,7 +60,7 @@ section{
 nav{
     display: flex;
     gap: 25px;
-    font-family: "sansita regular";}
+    font-family: "sansita regular";} /* no repitas! esto ya lo declaraste en el selector universal */
 
 nav a{
     color: var(--amarillo);
@@ -70,7 +70,7 @@ a:hover{
     color:var(--violeta2);
 }
 h1 {
-    font-family: "sansita regular";
+    font-family: "sansita regular"; /* no repitas!! */
     font-size: 90px;
     color: var(--violeta);}
 
@@ -82,10 +82,10 @@ ul{
     padding: 0px;}
 
 li{
-    font-family: "sansita bold";
+    font-family: "sansita bold"; /* no repitas! */
     font-size: 20px;}
 
-.datos{    
+.datos{    /* es necesario todo lo interno a datos? */
     display: flex;
     flex-direction: column;}
 
@@ -93,10 +93,10 @@ li{
     display: flex;
     flex-direction: row;
     gap: 50px;
-    align-items: flex-start;}
+    align-items: flex-start;} /* esto es necesario? */
 
 section{
-    max-width: 1200px;}
+    max-width: 1200px;} /* guarda que ya ustaste este selector en la línea 57 */
 
 .contenedor{
     display: flex;
@@ -105,7 +105,7 @@ section{
 .columnas{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-start; /* es necesario? */
     flex-wrap: wrap;
     column-gap: 152px;
     padding-bottom: 30px;}
@@ -121,13 +121,13 @@ p{
     font-size: 16px;
     text-align: left;
     line-height: 25px;
-    margin-top: 0px;
+    margin-top: 0px; /* no repitas!!! */
     max-width: 625px;}
 
 h2 {
     font-family: "sansita bold";
     font-size: 30px;
-    align-self: flex-start;
+    align-self: flex-start; /* es necesario? */
     color: var(--violeta);
     padding-top: 50px;
     margin: 30px 0px 20px 0px;} 
@@ -187,5 +187,5 @@ footer{
     align-items: center;
     height: 90px;
     gap: 20px;
-    padding-left: 50px;
+    padding-left: 50px; /* escribir los paddings en una sola línea */
     padding-right: 60px;}
