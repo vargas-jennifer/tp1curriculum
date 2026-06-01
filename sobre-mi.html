@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="utf-8" />  
-         <title>mi-portfolio</title> <!-- escribilo más amigable! -->
-         <link href=estilos.css rel="stylesheet" type="text/css"> 
-         <link rel="icon" type="image/png" href="imagenes/favicon_florcita.png">
+        <meta charset="utf-8" />  
+        <title>Jennifer Vargas portfolio</title> 
+        <link href=estilos.css rel="stylesheet" type="text/css"> 
+        <link rel="icon" type="image/png" href="imagenes/favicon_florcita.png">
     </head>
     
     <body> 
         <header>
             <div class="contenedor">
-                <a href="index.html">
-                <img src="imagenes/logo.png" alt="ícono" width="50" height="33">
-                </a>
+                
+                <a href="index.html"><div class="logo"></div></a>
+                
                 <nav>
                     <a href="index.html">inicio</a>
                     <a href="#">sobre mí</a>
@@ -23,83 +23,78 @@
         </header>
 
         <main>
-            <section> <!-- en general no es bueno que una etiqueta tenga una sola etiqueta interna a menos que se necesite por una cuestión de estilos para lograr algo complejo, pero en este caso la misma section podría tener la class "ppresentacion" y funcionar igual -->
-                <article class="presentacion">
-                    <img src="imagenes/foto-mia.png" alt="foto mía" width="519" height="389">
-                    <div class="datos">
-                        <h2>sobre mí</h2>
-                        <p>tengo 28 años y vivo en rafael castillo.
-                        estoy estudiando diseño y comunicación visual en la unla, actualmente cursando el último tramo de la carrera. me considero como una persona detallista y organizada, con inclinación hacia el diseño editorial y la tipografía, y también me gusta la fotografía. 
+            <section class="presentacion">
+                <img src="imagenes/foto-mia.png" alt="foto mía" width="519" height="389">
+                <article>
+                    <h2>sobre mí</h2>
+                    <p>tengo 28 años y vivo en rafael castillo.
+                    estoy estudiando diseño y comunicación visual en la unla, actualmente cursando el último tramo de la carrera. me considero como una persona detallista y organizada, con inclinación hacia el diseño editorial y la tipografía, y también me gusta la fotografía. 
 
-                        me encuentro en la búsqueda de mi primera experiencia laboral en el sector, con muchas ganas de volcar mis conocimientos académicos.</p>
-                    </div>
+                    me encuentro en la búsqueda de mi primera experiencia laboral en el sector, con muchas ganas de volcar mis conocimientos académicos.</p>
                 </article>
             </section>
 
-            <section><!-- misma corrección que la section anterior, la class "columnas" podría estar acá que funciona igual y sacar el div-->
-                <div class="columnas"> 
-                        
-                    <article class="educacion">
-                        <h2>educación</h2>
-                            <ul>
-                                <li>
-                                    <h3>licenciatura en diseño y comunicación visual</h3>
-                                    <p>universidad nacional de lanús, 2022 - actualidad</p>
-                                </li>
+            <section class="columnas">
+                <article class="educacion">
+                    <h2>educación</h2>
+                    <ul>
+                            <li>
+                                <h3>licenciatura en diseño y comunicación visual</h3>
+                                <p>universidad nacional de lanús, 2022 - actualidad</p>
+                            </li>
 
-                                <li>
-                                    <h3>ingeniería en informática</h3>
-                                    <p>universidad nacional de la matanza, 2017 - 2020 (materias iniciales)</p>
-                                </li>
+                            <li>
+                                <h3>ingeniería en informática</h3>
+                                <p>universidad nacional de la matanza, 2017 - 2020 (materias iniciales)</p>
+                            </li>
 
-                                <li>
-                                    <h3>bachiller en administración y economía</h3>
-                                    <p>escuela secundaria fragata libertad, 2010 - 2015</p>
-                                </li>
-                            </ul>
-                    </article>
+                            <li>
+                                <h3>bachiller en administración y economía</h3>
+                                <p>escuela secundaria fragata libertad, 2010 - 2015</p>
+                            </li>
+                    </ul>
+                </article>
 
-                    <article class="experiencia">
-                        <h2>experiencia laboral</h2>
-                            <ul>
-                                <li>
-                                    <h3>camarera</h3>
-                                    <p>cafetería bloom | eventual 2025</p>
-                                </li>
+                <article class="experiencia">
+                    <h2>experiencia laboral</h2>
+                    <ul>
+                        <li>
+                            <h3>camarera</h3>
+                            <p>cafetería bloom | eventual 2025</p>
+                        </li>
 
-                                <li>
-                                    <h3>atención al cliente</h3>
-                                    <p> joyería tifany's | 2022-2025</p>
-                                </li>
+                        <li>
+                            <h3>atención al cliente</h3>
+                            <p> joyería tifany's | 2022-2025</p>
+                        </li>
 
-                                <li>
-                                    <h3>atención al cliente</h3>
-                                    <p>emprendimiento familiar | 2020-2022</p>
-                                </li>
-                            </ul>
-                    </article>
-                </div>
-
+                        <li>
+                            <h3>atención al cliente</h3>
+                            <p>emprendimiento familiar | 2020-2022</p>
+                        </li>
+                    </ul>
+                </article>
             </section>
 
-            <section>
+            <section class="habilidades">
                             
-                <article class="habilidades"> 
+                <article> 
                     <h2>softwares</h2>
                     <div class="contenido">       
-                        <img src="imagenes/img_indesign.svg" alt="logo de indesign">
-                        <img src="imagenes/img_illustrator.svg" alt="logo de illustrator">
-                        <img src="imagenes/img_photoshop.svg" alt="logo de photoshop">
-                        <img src="imagenes/img_figma.svg" alt="logo de figma">
+                        <img src="imagenes/logos/img-indesign.svg" alt="logo de indesign">
+                        <img src="imagenes/logos/img-illustrator.svg" alt="logo de illustrator">
+                        <img src="imagenes/logos/img-photoshop.svg" alt="logo de photoshop">
+                        <img src="imagenes/logos/img-figma.svg" alt="logo de figma">
                     </div>
                 </article>
             </section>
+            <a href="sobre-mi.html"><div class="subir"></div></a>
         </main>
 
         <footer>
-            <a href="#"><img src="imagenes/behance.png" alt="ícono de behance" width="36" height="36"></a>
-            <a href="#"><img src="imagenes/ig.png" alt="ícono de instagram" width="36" height="36"></a>
-            <a href="#"><img src="imagenes/gmail.png" alt="ícono de gmail" width="36" height="36"></a>
+            <a href="https://www.behance.net/jennifervar" target="_blank" class="behance"><img src="imagenes/botones/behance.png" alt="ícono de behance" width="36" height="36"></a>
+            <a href="#" class="instagram"><img src="imagenes/botones/ig.png" alt="ícono de instagram" width="36" height="36"></a>
+            <a href="#" class="gmail"><img src="imagenes/botones/gmail.png" alt="ícono de gmail" width="36" height="36"></a>
         </footer>
     </body>
 </html>
